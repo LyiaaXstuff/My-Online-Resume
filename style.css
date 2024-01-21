@@ -6,8 +6,8 @@
 	box-sizing: border-box;
 }
 :root {
-	--primary-color: #BE398D;
-	--text-color: #727171;
+	--primary-color: #F26B8A;
+	--text-color: #D3D3D3;
 }
 html {
 	font-size: 10px;
@@ -120,17 +120,17 @@ a {
 	max-width: 250px;
 }
 .profile_name_firstName {
-	color: white;
-	font-weight: 200;
-	font-size: clamp(2rem, 8vw, 4rem);
+	color: var(--primary-color);
+	font-weight: 600;
+	font-size: clamp(2.5rem, 15vw, 7rem);
 	text-transform: uppercase;
 	display: block;
 	margin-bottom: -0.8rem;
 }
 .profile_name_lastName {
-	color: var(--primary-color);
-	font-weight: 700;
-	font-size: clamp(2.5rem, 15vw, 7rem);
+	color: white;
+	font-weight: 500;
+	font-size: clamp(2rem, 8vw, 4rem);
 	text-transform: uppercase;
 	display: block;
 }
@@ -138,6 +138,7 @@ a {
 	font-size: 1.5rem;
 	font-weight: 400;
 	text-transform: uppercase;
+	line-height: 2;
 }
 @media only screen and (max-width: 768px) {
 	.profile_container {
@@ -159,9 +160,15 @@ a {
 	line-height: 2;
 }
 
-/* eduction */
+/* education */
 .edu_item {
-	margin-top: 2rem;
+	margin-top: 1rem;
+	line-height: 2;
+}
+
+/* Final project */
+.project_item {
+	margin-top: 1rem;
 	line-height: 2;
 }
 
@@ -169,6 +176,7 @@ a {
 .extra_item {
 	margin-top: 2rem;
 }
+
 /* Interests */
 .interest_items {
 	margin-top: 2rem;
